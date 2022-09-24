@@ -1,0 +1,36 @@
+*{ 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root { 
+ --stars-color: #FBE159;
+}
+
+.detail { 
+    color: #000000; 
+}
+
+.titleDetails h1 { 
+    font-weight: 900 bold;
+}
+
+.stars { 
+    color: var(--stars-color);
+}
+
+.trailerDetails iframe { 
+    width: 23em; 
+    height: 13em;
+}
+
+@media(min-width: 900px){ 
+    .banner img { 
+      width: 100%;
+      height: 35em;
+      object-fit: cover;
+    }
+}
+
