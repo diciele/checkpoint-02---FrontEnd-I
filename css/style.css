@@ -1,0 +1,24 @@
+*{
+    font-family: "Roboto", sans-serif;
+}
+
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 0;
+}
+.nav-link{
+    color: black;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+.nav-link:hover{
+    color: #E51B3E;
+}
+
+@media(max-width: 650px) {
+    header .ms-5, header .me-5{
+        margin: 0 !important;
+    }
+}
