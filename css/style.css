@@ -1,6 +1,10 @@
 *{
     font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
 
 .navbar-collapse {
     flex-basis: 100%;
@@ -16,6 +20,82 @@
 .nav-link:hover{
     color: #E51B3E;
 }
+
+.banner{
+    background-image: url("../img/banner.png");
+}
+
+.banner h2{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 84px;
+    color: #E51B3E;
+}
+
+.banner p{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.banner button{
+    background: rgba(51, 187, 105, 0.05);
+    border: 1px solid #33BB69;
+    border-radius: 12px;
+    height: 60px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.06em;
+    color:#FFFFFF;
+    --bs-btn-hover-bg: #E51B3E;
+    --bs-btn-hover-border-color: #ffffff;
+}
+
+
+
+footer{
+    background-color: #171717;
+}
+
+.aluno h3{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    color: #ffffff;
+}
+
+.aluno p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    color:  rgba(255, 255, 255, 0.75);
+}
+
+
+.aluno i{
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 20px;
+}
+
+.aluno i:hover{
+    color: #E51B3E;
+    transition: all 0.5s;
+    transform: scale(1.2)
+}
+
+.footer-end{
+    color:rgba(255, 255, 255, 0.5);
+    font-size: 15px;    
+}
+
+
 
 @media(max-width: 650px) {
     header .ms-5, header .me-5{
