@@ -11,6 +11,18 @@
     --terceira-color:#0085FF;
 }
 /*header*/
+.navbar >.container-fluid{
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    height: 8.2vh;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: #000000;
+}
 
 .navbar-collapse {
     flex-basis: 100%;
@@ -23,7 +35,7 @@
     font-size: 18px;
     line-height: 21px;
 }
-.nav-link:hover{
+.navbar-dark .navbar-nav .nav-link:hover{
     color: #E51B3E;
 }
 
