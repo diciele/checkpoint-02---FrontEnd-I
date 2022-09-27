@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/sherlock.css">
     <title>DH Flix | Sherlock Holmes</title>
 </head>
 <body>
 <!-- INÍCIO DO HEADER-->
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top text-bg-light" class="bar-nav">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top text-bg-dark" class="bar-nav">
           <div class="container-fluid">
             <a class="navbar-brand ms-5" href="#"><img src="./img/logoDH.png" alt="logoDH"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,10 +32,34 @@
         </nav>
       </header>
 <!-- FINAL DO HEADER-->
-
-<picture class="banner">
-    <img src="./img/sherlockbanner.png" alt="Vingadores Guerra infinita" class="img-fluid"> 
-</picture>
+<!--CARROSEL-->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/sherlockbanner.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/sherlockbanner2.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/sherlockbanner3.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+<!--FIM CARROSEL-->
 <main class="container detail">
     <div class="row-4"></div>
         <div class="col-12"></div>
@@ -60,24 +87,86 @@
                 começam a procurá-lo depois que Watson cria um blog para relatar sobre os casos resolvidos pela dupla).
             </p>
         </div>
-        <div class="names">
-            <div class="nomes">
+        <div class="namesDetails">
+            <div class="names">
                 <h3>Diretores</h3>
                 <p>Euros Lyn <br> Paul McGuigan</p>
             </div>
-            <div class="nomes">
+            <div class="names">
                 <h3>Escritores</h3>
-                <p>Mark Gatiss - Arthur Conan Doyle<br> Steven Moffat - Steve Thompson</p>
+                <p>Mark Gatiss - Arthur Conan Doyle <br> Steven Moffat - Steve Thompson</p>
             </div>
         </div>
+
         <div class="trailer">
             <h4>Trailer</h4>
             <iframe width="700" height="329" src="https://www.youtube.com/embed/qlcWFoNqZHc" title="Sherlock: Series 4 Teaser (Official)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
         </div>
 </main>
-
+<footer class="container-fluid pt-5 pb-2">
+    <div class="row text-center">
+      <div class="col-md-3">
+        <div class="aluno pb-4">
+          <h3>Diciele Ferraz</h3>
+          <p>Desenvolvedora</p>
+          <a href="https://www.linkedin.com/in/diciele-ferraz-368893206/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/diciele"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+      <div class="col-md-3">  
+      <div class="aluno pb-4">
+          <h3>Fernando Santos</h3>
+          <p>Desenvolvedor</p>
+          <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin p-"></i></a>
+          <a href="https://github.com/fernando44santos"><i class="fa-brands fa-github"></i></a>
+        </div>
+        </div>
+        <div class="col-md-3">
+        <div class="aluno pb-4">
+          <h3>Gabriel Dias</h3>
+          <p>Desenvolvedor</p>
+          <a href="https://www.linkedin.com/in/gabriel-dias-b40309179"><i class="fa-brands fa-linkedin p-"></i></a>
+          <a href="https://github.com/gbdiaas"><i class="fa-brands fa-github"></i></a>
+        </div>
+        </div>
+        <div class="col-md-3">
+        <div class="aluno pb-4">
+          <h3>Gabriel Hebreus</h3>
+          <p>Desenvolvedor</p>
+          <a href="https://www.linkedin.com/in/gabriel-hebreus-3a5901241"><i class="fa-brands fa-linkedin p-"></i></a>
+          <a href="https://github.com/GabrielHebreus"><i class="fa-brands fa-github"></i></a>
+        </div>
+        </div>
+        <div class="col-md-4">
+        <div class="aluno pb-4">
+          <h3>Helza Aragão</h3>
+          <p>Desenvolvedora</p>
+          <a href="https://www.linkedin.com/in/helza-aragão-879a36204/"><i class="fa-brands fa-linkedin p-"></i></a>
+          <a href="https://github.com/helzaaragao"><i class="fa-brands fa-github"></i></a>
+        </div>
+        </div>
+        <div class="col-md-4">
+        <div class="aluno pb-4">
+          <h3>João Gilberto</h3>
+          <p>Desenvolvedora</p>
+          <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin p-"></i></a>
+          <a href="https://github.com/Joao-gc"><i class="fa-brands fa-github"></i></a>
+        </div>
+        </div>
+        <div class="col-md-4">
+        <div class="aluno pb-4">
+          <h3>Thalita Calzzetta</h3>
+          <p>Desenvolvedora</p>
+          <a href="https://www.linkedin.com/in/olithalita/"><i class="fa-brands fa-linkedin p-"></i></a>
+          <a href="https://github.com/thalitacalzzetta"><i class="fa-brands fa-github"></i></a>
+        </div>
+        </div>
+        <p class="footer-end pt-1">Checkpoint 2 desenvolvido em 2022</p>
+      </div>
+    </div>
+  </footer>  
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-
+<script src="https://kit.fontawesome.com/6d90d12477.js" crossorigin="anonymous"></script>
 </body>
 </html>
