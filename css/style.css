@@ -137,8 +137,6 @@ footer{
     font-size: 15px;    
 }
 
-
-
 @media(max-width: 768px) {
     header .ms-5, header .me-5{
         margin: 0 !important;
