@@ -1,0 +1,115 @@
+:root { 
+    --stars-color: #FBE159;
+    --word-color: #000000;
+    --high-color: #0085FF;
+}   
+
+*{ 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.detail { 
+    color: var(--word-color);
+    padding-top: 20px;
+}
+
+.titleDetails h1 { 
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+.stars { 
+    color: var(--stars-color);
+}
+
+.textDetails p { 
+    text-align: justify;
+    padding-top: 12px;
+}
+
+.namesDetails { 
+    width: 95%; 
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.names { 
+    width: 200px;
+}
+
+.names p { 
+    color: var(--high-color);
+    text-align: justify;
+}
+
+
+.trailerDetails iframe { 
+    width: 100%; 
+    height: 13.5em;
+}
+
+footer{
+    background-color: #171717;
+}
+
+.aluno h3{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    color: #ffffff;
+}
+
+.aluno p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    color:  rgba(255, 255, 255, 0.75);
+}
+
+.aluno i{
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 20px;
+}
+
+.aluno i:hover{
+    color: #E51B3E;
+    transition: all 0.5s;
+    transform: scale(1.2)
+}
+
+.footer-end{
+    color:rgba(255, 255, 255, 0.5);
+    font-size: 15px;    
+}
+
+
+
+@media(min-width: 800px){ 
+    .banner img { 
+      width: 100%;
+      height: 35em;
+      object-fit: cover;
+    }
+    .trailerDetails iframe { 
+        width: 100%; 
+        height: 35em;
+    }
+
+    .namesDetails { 
+        display: inline-flex;
+        justify-content: left;
+    }
+
+    .names p { 
+        width: 450px;
+    }
+    
+}
+
