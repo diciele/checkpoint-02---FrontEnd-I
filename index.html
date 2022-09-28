@@ -8,52 +8,81 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/1e42ab9ae0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
-    <title>DH Flix</title>
+    <title>Gitflix</title>
 </head>
 <body>
-    <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top text-bg-light" class="bar-nav">
-        <div class="container-fluid">
-          <a class="navbar-brand ms-5" href="#"><img src="./img/logoDH.png" alt="logoDH"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse grow-0 float-left" id="navbarCollapse" class="lista-header">
-            <ul class="navbar-nav me-5 mb-2 mb-md-0">
-              <li class="nav-item"><a class="nav-link" aria-current="page" href="#banner">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="#itens">Itens</a></li>
-              <li class="nav-item"><a class="nav-link" href="#Sobre">Sobre nós</a></li>
-              <li class="nav-item"><a class="nav-link" href="#" >Login</a></li>
-            </ul>
-          </div>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top text-bg-dark" class="bar-nav">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-5" href="#"><img src="./img/logoDH.png" alt="logoDH"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse grow-0 float-left" id="navbarCollapse" class="lista-header">
+          <ul class="navbar-nav me-5 mb-2 mb-md-0">
+            <li class="nav-item"><a class="nav-link" aria-current="page" href="#banner">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#itens">Itens</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Sobre">Sobre nós</a></li>
+            <li class="nav-item"><a class="nav-link" class="#banner" href="#">Login</a></li>
+          </ul>
         </div>
-      </nav>
-    </header>
+      </div> 
+    </nav>
+  </header>
       <div class="container-fluid">
         <div class="row">
           <div class="col p-0">
             <div id="banner" class="banner mw-100 vh-100 d-flex flex-column justify-content-center">
-              <div class="col-10 offset-1 col-md-8 offset-md-2">
-                <h2>DH Flix</h2>
-                <p>Confira a maior coletânea de filmes que a Digital House tem a te oferecer</p>
-                <button type="button" class="btn btn-outline-primary col-10 offset-1 col-md-4 offset-md-4 mt-2"><a class="link-banner" href="#itens">Explorar</a></button>
+              <div class="col-10 offset-1 col-md-6">
+                <h2 class="pb-4">HISTÓRIAS ÚNICAS. ESTRELAS ICÔNICAS. UMA MONTANHA DE ENTRETENIMENTO.</h2>
+                <p class="pb-4"> Assine por R$00,00 BRL por Mês. Cancele a qualquer momento. Cadastre-se agora e obtenha 7 dias grátis.</p>
+                <button type="button" class="col-md-6 offset-md-3 btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@Assine">Assine</button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <img src="./img/logoDH.png">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">E-mail</label>
+                            <input type="email" class="form-control" id="recipient-name">
+                          </div>
+                          <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Senha</label>
+                            <input type="password" class="form-control" id="message-text">
+                          </div>
+                          <div class="modal-footer">
+                            <button type="reset" class="btn btn-primary">Limpar</button>
+                            <button type=" " class="btn btn-primary">Enviar</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="cards-back">
       <div class="container">
         <div id="itens" class="row mw-100 v-100 m-0 p-0">
-            <div class="col-12 py-5 text-center">
-              <h2 class="title-cards">Itens</h2>
+            <div class="col-10 px-4 col-md-6 py-5 text-start m-0">
+              <h2 class="title-cards pb-3">SEU CONTEÚDO FAVORITO ESTÁ AQUI</h2>
+              <p class="slogan-cards">De filmes de sucesso a séries que você ama, além de programas que fizeram história. A GitFlix é o lugar para assistir tudo, quantas vezes quiser!</p>
             </div>
+            <div class="col-md-5"></div>
             <div class="col-md-4 pb-5">
               <div class="card">
                 <div class="img-card" style="background-image: url('./img/vigadores.webp')"></div>
                 <div class="card-body">
                   <h5 class="card-title">Vingadores</h5>
                   <p class="card-text text-center px-1 py-2">Loki (Tom Hiddleston) retorna à Terra enviado pelos chitauri, uma raça alienígena que pretende dominar os humanos.</p>
-                  <a href="#" class="btn btn-primary col-10 offset-1 col-md-10 offset-md-1">Abrir</a>
+                  <a href="Vingadores.html" class="btn btn-primary col-10 offset-1 col-md-10 offset-md-1">Abrir</a>
                 </div>
               </div>
             </div>
@@ -63,7 +92,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Sherlock Holmes</h5>
                   <p class="card-text text-center px-1 py-2">O dr. John Watson precisa de um lugar para morar em Londres. Ele é apresentado ao detetive Sherlock Holmes e os dois acabam desenvolvendo uma parceria intrigante.</p>
-                  <a href="#" class="btn btn-primary col-10 offset-1 col-md-10 offset-md-1">Abrir</a>
+                  <a href="sherlock.html" class="btn btn-primary col-10 offset-1 col-md-10 offset-md-1">Abrir</a>
                 </div>
               </div>
             </div>
@@ -73,17 +102,17 @@
                 <div class="card-body">
                   <h5 class="card-title">Minions</h5>
                   <p class="card-text text-center px-1 py-2">Minions são seres multicelulares amarelos que existem desde o início do tempo, evoluindo de amarelos organismos unicelulares aquáticos.</p>
-                  <a href="#" class="btn btn-primary col-10 offset-1 col-md-10 offset-md-1">Abrir</a>
+                  <a href="Minions.html" class="btn btn-primary col-10 offset-1 col-md-10 offset-md-1">Abrir</a>
                 </div>
               </div>
             </div>
             <div class="col-md-4 pb-5">
               <div class="card">
-                <div class="img-card" style="background-image: url('./img/pantera.jfif')"></div>
+                <div class="img-card" style="background-image: url('./img/pantera\ negra.jpg ')"></div>
                 <div class="card-body">
                   <h5 class="card-title">Pantera Negra</h5>
                   <p class="card-text text-center px-1 py-2">Há milhares de anos, cinco tribos africanas guerreiam quando um meteorito contendo vibranium cai na Terra. Surge o primeiro Pantera Negra.</p>
-                  <a href="#" class="btn btn-primary col-10 offset-1 col-md-10 offset-md-1">Abrir</a>
+                  <a href="Pantera Negra.html" class="btn btn-primary col-10 offset-1 col-md-10 offset-md-1">Abrir</a>
                 </div>
               </div>
             </div>
@@ -93,7 +122,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Rick And Morty</h5>
                   <p class="card-text text-center px-1 py-2">O show gira em torno das aventuras dos membros da família Smith, que consiste nos pais Jerry e Beth, seus filhos Summer e Morty, e o pai de Beth, chamado Rick Sanchez.</p>
-                  <a href="#" class="btn btn-primary col-10 offset-1 col-md-10 offset-md-1">Abrir</a>
+                  <a href="Rick And Morty.html" class="btn btn-primary col-10 offset-1 col-md-10 offset-md-1">Abrir</a>
                 </div>
               </div>
             </div>
@@ -103,12 +132,14 @@
                 <div class="card-body">
                   <h5 class="card-title text-start">Eleven</h5>
                   <p class="card-text text-center px-1 py-2">Nascida Jane Ives e mais tarde conhecida como Jane Hopper, é uma personagem fictícia da série de televisão Stranger Things.</p>
-                  <a href="#" class="btn btn-primary col-10 offset-1 col-md-10 offset-md-1">Abrir</a>
+                  <a href="Eleven.html" class="btn btn-primary col-10 offset-1 col-md-10 offset-md-1">Abrir</a>
                 </div>
               </div>
             </div>
         </div>
       </div>
+      </div>
+
       <footer class="container-fluid pt-5 pb-2">
         <div id="Sobre" class="row text-center">
           <div class="col-md-3">
