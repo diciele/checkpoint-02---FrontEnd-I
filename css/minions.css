@@ -11,32 +11,26 @@
     --terceira-color:#0085FF;
 }
 /*header*/
-.navbar >.container-fluid{
-    background-color: #ffffff;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 2;
-    height: 8.2vh;
+/*header*/
+.navbar-dark .navbar-toggler-icon {
+    /*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");*/
+    background-image: url(../img/menu-hamburguer.png);
 }
-.navbar-dark .navbar-nav .nav-link{
-    color: #000000;
-}
+
 
 .navbar-collapse {
     flex-basis: 100%;
     flex-grow: 0;
 }
 .nav-link{
-    color: black;
+    color: rgb(255, 255, 255);
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
 }
-.navbar-dark .navbar-nav .nav-link:hover{
-    color: #E51B3E;
+.nav-link:hover{
+    color: #FFBD59;
 }
 
 /*body-vingadores*/
