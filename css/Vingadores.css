@@ -33,6 +33,7 @@
     color: #FFBD59;
 }
 
+
 /*body-vingadores*/
 
 .detail{
@@ -153,6 +154,20 @@ background-color:#2C0F4F ;
 
 
 @media(max-width: 650px) {
+    header .ms-5, header .me-5{
+        margin: 0 !important;
+    }
+}
+@media(min-width: 800px){
+    .carousel-inner{ 
+        width: 100vw;
+        height: 100%;
+        object-fit: cover;
+    }
+    iframe { 
+        width: 100%; 
+        height: 25em;
+    }
     header .ms-5, header .me-5{
         margin: 0 !important;
     }
