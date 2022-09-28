@@ -11,6 +11,27 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.navbar-dark .navbar-toggler-icon {
+    /*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");*/
+    background-image: url(../img/menu-hamburguer.png);
+}
+
+
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 0;
+}
+.nav-link{
+    color: rgb(255, 255, 255);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+.nav-link:hover{
+    color: #FFBD59;
+}
+
 
 .detail { 
     color: var(--word-color);
@@ -79,7 +100,7 @@ footer{
 }
 
 .aluno i:hover{
-    color: #E51B3E;
+    color: #FFBD59;
     transition: all 0.5s;
     transform: scale(1.2)
 }
