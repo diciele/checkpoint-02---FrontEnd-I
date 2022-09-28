@@ -10,6 +10,7 @@
     padding: 0; 
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth !important;
 }
 
 .navbar-dark .navbar-toggler-icon {
@@ -171,6 +172,33 @@ footer{
 .footer-end{
     color:rgba(255, 255, 255, 0.5);
     font-size: 15px;    
+}
+/*modal*/
+.btn-primary{
+    background: #F19201;
+    border-radius: 12px;
+    border-color: #F19201;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #000000;
+    --bs-btn-hover-color: #F19201;
+    --bs-btn-hover-bg: #000000;
+    --bs-btn-hover-border-color: #000000;
+    --bs-btn-active-color: #F19201;
+    --bs-btn-active-bg: #000000;
+    --bs-btn-active-border-color: #000000;
+}
+.modal-header{
+background-color:#2C0F4F ;
+}
+
+.btn-close{
+    background-color: #F19201;
+
 }
 
 

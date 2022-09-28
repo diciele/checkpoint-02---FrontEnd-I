@@ -14,21 +14,50 @@
   <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top text-bg-dark" class="bar-nav">
       <div class="container-fluid">
-        <a class="navbar-brand ms-5" href="#"><img src="./img/logoDH.png" alt="logoDH"></a>
+        <a class="navbar-brand ms-5" href="./index.html"><img src="./img/logoDH.png" alt="logoDH"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse grow-0 float-left" id="navbarCollapse" class="lista-header">
           <ul class="navbar-nav me-5 mb-2 mb-md-0">
-            <li class="nav-item"><a class="nav-link" aria-current="page" href="#banner">Home</a></li>
+            <li class="nav-item"><a class="nav-link" aria-current="page" href="./index.html">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#itens">Itens</a></li>
-            <li class="nav-item"><a class="nav-link" href="#Sobre">Sobre nós</a></li>
-            <li class="nav-item"><a class="nav-link" class="#banner" href="#">Login</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre nós</a></li>
+            <li><button type="button" class=" btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@login">login</button></li>
           </ul>
         </div>
       </div> 
     </nav>
   </header>
+
+  <!--modal-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="./img/logoDH.png">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">E-mail</label>
+              <input type="email" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Senha</label>
+              <input type="password" class="form-control" id="message-text">
+            </div>
+            <div class="modal-footer">
+              <button type="reset" class="btn btn-primary">Limpar</button>
+              <button type=" " class="btn btn-primary">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
     <picture class="banner">
         <img src="./img/elevenbanner.jpg" alt="Eleven de Stranger Things na 4 temporada" class="img-fluid">
     </picture>
@@ -62,6 +91,7 @@
                     <p>Matt Duffer, Ross Duffer,  Jessie Nickson, Kate Trefry, Justin Doble e Paul Dichter</p>
                 </div>
             </div>
+<<<<<<< HEAD
             
             <div class="favoriteDetails">
               <div class="favoriteText">
@@ -99,6 +129,9 @@
               </div>
  
             </div>
+=======
+            <div id="itens"></div>
+>>>>>>> 110e035a468928a77cc7dc322d855f3d03132391
             <div class="trailerDetails">
                 <h4>Trailer</h4>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/yTX0HxTq9wo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -106,6 +139,7 @@
         </div>
     </main>
     <footer class="container-fluid pt-5 pb-2">
+      <div id="sobre"></div>
         <div class="row text-center">
           <div class="col-md-3">
             <div class="aluno pb-4">

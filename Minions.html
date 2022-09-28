@@ -1,12 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gitflix </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/minions.css">
+    <title>Git Flix | Minions</title>
 </head>
+
+
+<!--header-->
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top text-bg-dark" class="bar-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-5" href="./index.html"><img src="./img/logoDH.png" alt="logoDH"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse grow-0 float-left" id="navbarCollapse" class="lista-header">
+                <ul class="navbar-nav me-5 mb-2 mb-md-0">
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#itens">Itens</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre nós</a></li>
+                    <li><button type="button" class=" btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@login">login</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!--modal-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="./img/logoDH.png">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">E-mail</label>
+              <input type="email" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Senha</label>
+              <input type="password" class="form-control" id="message-text">
+            </div>
+            <div class="modal-footer">
+              <button type="reset" class="btn btn-primary">Limpar</button>
+              <button type=" " class="btn btn-primary">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
 <body>
+    <picture class="banner">
+        <img src="./img/minions_banner.jpg" alt="Minions" class="img-fluid">
+    </picture>
+    <main class="container detail">
+        <div class="row-4"></div>
+        <div class="col-12"></div>
+        <div class="titulo">
+            <h1>Os Minions</h1>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+        <div class="sinopse">
+            <p> Os minions são seres multicelulares amarelos que existem desde o início do tempo, evoluindo de amarelos
+                organismos unicelulares aquáticos a seres que têm apenas um propósito: servir aos vilões mais malvados
+                da história. Porém, depois que sua inépcia destrói todos os seus mestres, incluindo um T. Rex, Genghis
+                Khan, Napoleão, e até o Drácula, eles decidem isolar-se do mundo e começar uma nova vida no Ártico. Em
+                algum momento na década de 1960, a falta de um mestre leva-os a desenvolver depressão, então Kevin e
+                outros dois voluntários (Stuart e Bob) partem para encontrar um novo mestre.</p>
+        </div>
+        <div class="names">
+            <div class="nomes">
+                <h3>Diretor</h3>
+                <p> Kyle Baldar</p>
+            </div>
+            <div class="nomes">
+                <h3>Escritores</h3>
+                <p>Matthew Fogel, Brian Lynch</p>
+            </div>
+        </div>
+        <div id="itens"></div>
+        <div class="trailer">
+            <h4>Trailer</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/oLCeh_pqjes"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </main>
+
+
+    <!--footer-->
+    <footer class="container-fluid pt-5 pb-2">
+        <div id="sobre"></div>
+        <div class="row text-center">
+            <div class="col-md-3">
+                <div class="aluno pb-4">
+                    <h3>Diciele Ferraz</h3>
+                    <p>Desenvolvedora</p>
+                    <a href="https://www.linkedin.com/in/diciele-ferraz-368893206/"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/diciele"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="aluno pb-4">
+                    <h3>Fernando Santos</h3>
+                    <p>Desenvolvedor</p>
+                    <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin p-"></i></a>
+                    <a href="https://github.com/fernando44santos"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="aluno pb-4">
+                    <h3>Gabriel Dias</h3>
+                    <p>Desenvolvedor</p>
+                    <a href="https://www.linkedin.com/in/gabriel-dias-b40309179"><i
+                            class="fa-brands fa-linkedin p-"></i></a>
+                    <a href="https://github.com/gbdiaas"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="aluno pb-4">
+                    <h3>Gabriel Hebreus</h3>
+                    <p>Desenvolvedor</p>
+                    <a href="https://www.linkedin.com/in/gabriel-hebreus-3a5901241"><i
+                            class="fa-brands fa-linkedin p-"></i></a>
+                    <a href="https://github.com/GabrielHebreus"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="aluno pb-4">
+                    <h3>Helza Aragão</h3>
+                    <p>Desenvolvedora</p>
+                    <a href="https://www.linkedin.com/in/helza-aragão-879a36204/"><i
+                            class="fa-brands fa-linkedin p-"></i></a>
+                    <a href="https://github.com/helzaaragao"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="aluno pb-4">
+                    <h3>João Gilberto</h3>
+                    <p>Desenvolvedor</p>
+                    <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin p-"></i></a>
+                    <a href="https://github.com/Joao-gc"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="aluno pb-4">
+                    <h3>Thalita Calzzetta</h3>
+                    <p>Desenvolvedora</p>
+                    <a href="https://www.linkedin.com/in/olithalita/"><i class="fa-brands fa-linkedin p-"></i></a>
+                    <a href="https://github.com/thalitacalzzetta"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <p class="footer-end pt-1">Checkpoint 2 desenvolvido em 2022</p>
+        </div>
+        </div>
+    </footer>
     
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/6d90d12477.js" crossorigin="anonymous"></script>
+
+
 </html>

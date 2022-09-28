@@ -9,7 +9,31 @@
     padding: 0; 
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth !important;
 }
+
+/* HEADER */
+.navbar-dark .navbar-toggler-icon {
+    /*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");*/
+    background-image: url(../img/menu-hamburguer.png);
+}
+
+
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 0;
+}
+.nav-link{
+    color: rgb(255, 255, 255);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+.nav-link:hover{
+    color: #FFBD59;
+}
+/* FIM DO HEADER */
 
 
 .detail { 
@@ -30,16 +54,15 @@
     text-align: justify;
     padding-top: 12px;
 }
-
-.namesDetails { 
-    width: 95%; 
-    height: 150px;
+.textDetails{
     display: flex;
-    justify-content: space-between;
+    width: 95%; 
+    justify-content: flex-start;
 }
 
-.names { 
-    width: 200px;
+
+.names{
+    width: 40%;
 }
 
 .names p { 
@@ -47,11 +70,13 @@
     text-align: justify;
 }
 
-
-.trailerDetails iframe { 
-    width: 100%; 
-    height: 13.5em;
+iframe{
+    width: 100%;
+    height: 80vh;
+    border-radius: 12px;
 }
+
+
 
 footer{
     background-color: #171717;
@@ -87,6 +112,33 @@ footer{
 .footer-end{
     color:rgba(255, 255, 255, 0.5);
     font-size: 15px;    
+}
+/*modal*/
+.btn-primary{
+    background: #F19201;
+    border-radius: 12px;
+    border-color: #F19201;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #000000;
+    --bs-btn-hover-color: #F19201;
+    --bs-btn-hover-bg: #000000;
+    --bs-btn-hover-border-color: #000000;
+    --bs-btn-active-color: #F19201;
+    --bs-btn-active-bg: #000000;
+    --bs-btn-active-border-color: #000000;
+}
+.modal-header{
+background-color:#2C0F4F ;
+}
+
+.btn-close{
+    background-color: #F19201;
+
 }
 
 
