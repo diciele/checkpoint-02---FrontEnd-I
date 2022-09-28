@@ -227,6 +227,9 @@ footer{
         font-size: 20px;
         line-height: 25px;
     }
+    header .ms-5, header .me-5{
+        margin: 0 !important;
+    }
 
 
     
@@ -239,6 +242,9 @@ footer{
 
     .card-title{
         height: auto;
+    }
+    header .ms-5, header .me-5{
+        margin: 0 !important;
     }
 
 }

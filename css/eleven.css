@@ -37,6 +37,9 @@
 .nav-link:hover{
     color: #FFBD59;
 }
+header .ms-5, header .me-5{
+    margin: 0 !important;
+}
 
 .btn-primary{
     background: #F19201;
@@ -252,4 +255,10 @@ footer{
    
     
 }
+@media(max-width: 650px) {
+    header .ms-5, header .me-5{
+        margin: 0 !important;
+    }
+}
+
 

@@ -157,7 +157,18 @@ background-color:#2C0F4F ;
     header .ms-5, header .me-5{
         margin: 0 !important;
     }
+    .names p { 
+    color: var(--terceira-color);
+    text-align:start;
+    cursor: pointer;
+    font-size: small;
+    
+    }
+    
+
 }
+
+
 @media(min-width: 800px){
     .carousel-inner{ 
         width: 100vw;

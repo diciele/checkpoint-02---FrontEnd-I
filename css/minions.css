@@ -152,3 +152,8 @@ background-color:#2C0F4F ;
         margin: 0 !important;
     }
 }
+@media(min-width: 800px){
+    header .ms-5, header .me-5{
+        margin: 0 !important;
+    }
+}
