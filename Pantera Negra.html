@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/6d90d12477.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/pantera negra.css">
-    <title>Gitflix |Pantera Negra</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/pantera negra.css">
+  <title>Gitflix |Pantera Negra</title>
 </head>
+
 <body>
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top text-bg-dark" class="bar-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-5" href="#"><img src="./img/logoDH.png" alt="logoDH"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse grow-0 float-left" id="navbarCollapse" class="lista-header">
+                <ul class="navbar-nav me-5 mb-2 mb-md-0">
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Itens</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sobre nós</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" >Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
     <picture class="banner">
         <img src="./img/pantera negra.jpg" alt="Eleven de Stranger Things na 4 temporada" class="img-fluid">
     </picture>
@@ -29,7 +48,7 @@
                     <i class="fa-solid fa-star"></i>
                 </div>
                 <p>Em Pantera Negra, após a morte do rei T'Chaka (John Kani), o príncipe T'Challa (Chadwick Boseman) retorna a Wakanda para a cerimônia de coroação. Nela são reunidas as cinco tribos que compõem o reino, sendo que uma delas, os Jabari, não apoia o atual governo. T'Challa logo recebe o apoio de Okoye (Danai Gurira), a chefe da guarda de Wakanda, da irmã Shuri (Letitia Wright), que coordena a área tecnológica do reino, e também de Nakia (Lupita Nyong'o), a grande paixão do atual Pantera Negra, que não quer se tornar rainha. Juntos, eles estão à procura de Ulysses Klaue (Andy Serkis), que roubou de Wakanda um punhado de vibranium, alguns anos atrás.</p>
-            </div>
+          </div>
             <div class="textDetails">
                 <div class="names">
                     <h3>Diretor</h3>
@@ -38,10 +57,13 @@
                 <div class="names">
                     <h3>Escritores</h3>
                     <p>Ryan Coogler, Stan Lee, Jack Kirby e Joe Robert Cole</p>
-                    <div class="trailerDetails">
-                </div><h4>Trailer</h4>
-                <iframe width="560" height="315" src="https://www.youtube.com/watch?v=oHDi01Yn4tY&t=32s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-            </div>
+                </div>
+          </div>
+            <div class="trailer">
+              <h4>Trailer</h4>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/oHDi01Yn4tY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+            
         </main>
         <footer class="container-fluid pt-5 pb-2">
             <div class="row text-center">
@@ -106,8 +128,7 @@
             </div>
           </footer>   
         
-    
-    
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6d90d12477.js" crossorigin="anonymous"></script>
 </body>
 </html>
