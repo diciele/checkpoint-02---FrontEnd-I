@@ -1,8 +1,13 @@
 :root { 
+    --modal-header:#2C0F4F;
+    --btn-close:#F19201 ;
     --stars-color: #FBE159;
     --word-color: #000000;
+    --span-color: #f5aa3a;
     --high-color: #0085FF;
-    --destaque-eleven-color: #e40002;
+    --emojis-color: #0000002c; 
+    --fa-heart: rgb(176, 13, 13);
+    --fa-thumbs-up: #025bae ;
 }   
 
 *{ 
@@ -10,11 +15,10 @@
     padding: 0; 
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    scroll-behavior: smooth !important;
+    scroll-behavior: smooth;
 }
 
 .navbar-dark .navbar-toggler-icon {
-    /*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");*/
     background-image: url(../img/menu-hamburguer.png);
 }
 
@@ -34,10 +38,39 @@
     color: #FFBD59;
 }
 
+.btn-primary{
+    background: #F19201;
+    border-radius: 12px;
+    border-color: #F19201;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #000000;
+    --bs-btn-hover-color: #F19201;
+    --bs-btn-hover-bg: #000000;
+    --bs-btn-hover-border-color: #000000;
+    --bs-btn-active-color: #F19201;
+    --bs-btn-active-bg: #000000;
+    --bs-btn-active-border-color: #000000;
+}
+
+.modal-header{
+   background-color: var(--modal-header);
+
+}
+
+.btn-close{
+    background-color: var(--btn-close);
+
+}
+
 
 .detail { 
     color: var(--word-color);
-    padding-top: 20px;
+    padding-top: 1.25em;
 }
 
 .titleDetails h1 { 
@@ -49,9 +82,25 @@
     color: var(--stars-color);
 }
 
+.fraseDetails { 
+    text-align: center;
+    padding-top: 1em;
+}
+
+.fraseDetails h2 { 
+    font-size: 1em;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.fraseDetails span { 
+    color: var(--span-color);
+}
+
 .textDetails p { 
     text-align: justify;
-    padding-top: 12px;
+    padding-top: 0.75em;
+    font-size: 1.2em;
 }
 
 .namesDetails { 
@@ -62,18 +111,13 @@
 }
 
 .names { 
-    width: 200px;
+    width: 12.5em;
 }
 
 .names p { 
     color: var(--high-color);
     text-align: justify;
-}
-
-
-.trailerDetails iframe { 
-    width: 100%; 
-    height: 13.5em;
+    font-size: 1em;
 }
 
 .favoriteDetails { 
@@ -86,58 +130,51 @@
 }
 
 .favoriteText h3{ 
-   padding-bottom: 20px;
+    padding-bottom: 1.25em;
+ }
+ 
+ .favoriteCard { 
+     width: 20.25em; 
+     height: 20em;
+ }
+ 
+ .favoriteCard img { 
+     width: 12.5em;
+     height: 12.5em;
+     object-fit: cover;
+     border-radius: 50%;
+ }
+ 
+ .favoriteCard p { 
+     font-size: 1.7em;
+     font-weight: 500;
+     margin-bottom: 0;
+    
+ }
+ 
+ .favoriteCard .emojis i{ 
+     font-size: 2em;
+     color: var(--emojis-color);
+ }
+ 
+ .favoriteCard .emojis .fa-heart:hover{
+     color: var(--fa-heart);
+ } 
+ 
+ .favoriteCard .emojis .fa-face-smile:hover{ 
+     color: var(--span-color);
+ }
+
+ .favoriteCard .emojis .fa-thumbs-up:hover{ 
+    color: var(--fa-thumbs-up);
+ }
+
+.trailerDetails iframe { 
+    width: 100%; 
+    height: 13.5em;
 }
 
-.favoriteCard { 
-    width: 324px; 
-    height: 347px;
-}
 
-.favoriteCard img { 
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-.favoriteCard p { 
-    font-size: 2em;
-    font-weight: 500;
-    margin-bottom: 0;
-}
-
-.favoriteCard .emojis i{ 
-    font-size: 2.5em;
-    color:#0000002c;
-}
-
-.favoriteCard .emojis .fa-heart:hover{
-    color:red;
-} 
-
-.favoriteCard .emojis .fa-face-smile:hover{ 
-    color: #FFBD59;
-}
-  
-
-.fraseDetails { 
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.fraseDetails h2 { 
-    font-size: 1.8em;
-    font-style: italic;
-    font-weight: 500;
-    text-align: center;
-}
-
-.fraseDetails span { 
-    color:#f5aa3a ;
-}
 footer{
     background-color: #171717;
 }
@@ -173,33 +210,7 @@ footer{
     color:rgba(255, 255, 255, 0.5);
     font-size: 15px;    
 }
-/*modal*/
-.btn-primary{
-    background: #F19201;
-    border-radius: 12px;
-    border-color: #F19201;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 19px;
-    line-height: 23px;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: #000000;
-    --bs-btn-hover-color: #F19201;
-    --bs-btn-hover-bg: #000000;
-    --bs-btn-hover-border-color: #000000;
-    --bs-btn-active-color: #F19201;
-    --bs-btn-active-bg: #000000;
-    --bs-btn-active-border-color: #000000;
-}
-.modal-header{
-background-color:#2C0F4F ;
-}
 
-.btn-close{
-    background-color: #F19201;
-
-}
 
 
 
@@ -209,9 +220,9 @@ background-color:#2C0F4F ;
       height: 35em;
       object-fit: cover;
     }
-    .trailerDetails iframe { 
-        width: 100%; 
-        height: 35em;
+
+    .fraseDetails br{ 
+        display: none;
     }
 
     .namesDetails { 
@@ -222,14 +233,23 @@ background-color:#2C0F4F ;
     .names p { 
         width: 450px;
     }
-    .favoriteAll{ 
-        display: flex; 
-        flex-direction: row;
+
+    .favoriteDetails { 
+        padding-top: 0em;
     }
 
-    .fraseDetails br{ 
-        display: none;
+    .favoriteAll{ 
+        width: 100%;
+        display: flex; 
+        flex-direction: row;
+        justify-content: center;
     }
+
+    .trailerDetails iframe { 
+        width: 100%; 
+        height: 25em;
+    }
+   
     
 }
 
