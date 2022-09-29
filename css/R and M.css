@@ -33,6 +33,10 @@ main{
     padding: 2.5rem;
 }
 
+.carousel{
+    margin-top: 77px;
+}
+
 .infcreators{
     display: flex;
     width: 95%; 
@@ -70,11 +74,7 @@ main{
     font-weight: 600;
 }
 
-.trailer iframe{
-    width: 100%;
-    height: 80vh;
-    border-radius: 10px;
-}
+
 
 .container{
     height: 5vw;

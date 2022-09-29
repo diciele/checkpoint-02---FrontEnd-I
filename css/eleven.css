@@ -70,6 +70,12 @@ header .ms-5, header .me-5{
 
 }
 
+.banner{ 
+    width: 100%;
+    height: 35em;
+    object-fit: cover;
+    margin-top: 77px;
+  }
 
 .detail { 
     color: var(--word-color);
@@ -172,11 +178,6 @@ header .ms-5, header .me-5{
     color: var(--fa-thumbs-up);
  }
 
-.trailerDetails iframe { 
-    width: 100%; 
-    height: 13.5em;
-}
-
 
 footer{
     background-color: #171717;
@@ -218,12 +219,7 @@ footer{
 
 
 @media(min-width: 800px){ 
-    .banner img { 
-      width: 100%;
-      height: 35em;
-      object-fit: cover;
-    }
-
+    
     .fraseDetails br{ 
         display: none;
     }
@@ -248,11 +244,6 @@ footer{
         justify-content: center;
     }
 
-    .trailerDetails iframe { 
-        width: 100%; 
-        height: 25em;
-    }
-   
     
 }
 @media(max-width: 650px) {

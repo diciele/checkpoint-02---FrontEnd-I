@@ -38,6 +38,11 @@ header .ms-5, header .me-5{
 }
 /* FIM DO HEADER */
 
+.banner{
+    margin-top: 77px;
+    width: 100%;
+}
+
 
 .detail { 
     color: var(--word-color);
